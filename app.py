@@ -12,6 +12,8 @@ def index():
         if_fredag = "Ja"
     else: 
         if_fredag = "Nei"
+        
+
     return render_template('index.html', if_fredag=if_fredag)
 
 

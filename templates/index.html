@@ -13,8 +13,9 @@
         <h1> er det Fredag i dag?</h1>
     </header>
     <main>
-        <h2> {{ if_fredag }} </h2>
+        <h2 class="{% if if_fredag == 'Ja' %}green{% else %}red{% endif %}">{{ if_fredag }}</h2>
+        <h3> "{% if if_fredag == 'Ja'%}<img src="/static/fredag.gif" alt="Fredag">{% endif %}</h3>
     </main>
 
 </body>
-</html>  
+</html>
